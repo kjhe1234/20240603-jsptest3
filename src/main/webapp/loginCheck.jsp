@@ -28,11 +28,13 @@
 			}
 	%>
 		<br>
+		<a href="sessionTest.jsp">세션테스트 페이지로 가기</a>
+		<br>
 		<a href="logout.jsp">로그아웃</a>
 		<br>
 	<% 		
 		} else { // 비로그인 상태
-			out.println("로그인 페이지로 이동하세요.");
+			out.println("로그인 하지 않은 상태 입니다. 페이지로 이동하세요.");
 		%>
 			<br>
 			<a href="login.jsp">로그인 페이지로 이동</a>
