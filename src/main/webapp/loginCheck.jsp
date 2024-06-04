@@ -34,7 +34,9 @@
 		<br>
 	<% 		
 		} else { // 비로그인 상태
-			out.println("로그인 하지 않은 상태 입니다. 페이지로 이동하세요.");
+			//out.println("로그인 하지 않은 상태 입니다. 페이지로 이동하세요.");
+			response.sendRedirect("login.jsp");
+			// 로그인이 안된 상태에서 이 페이지에 접속시 강제로 로그인 페이지로 이동
 		%>
 			<br>
 			<a href="login.jsp">로그인 페이지로 이동</a>
